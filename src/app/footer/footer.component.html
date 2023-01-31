@@ -1,0 +1,9 @@
+<div class="row links">
+    <div class="block col-6" *ngFor="let linkObj of links">
+        <a href="linkObj.link" target="_blank">
+            <div class="block-in">
+                <span [innerHTML]="linkObj.icon"></span>
+            </div>
+        </a>
+    </div>
+</div>

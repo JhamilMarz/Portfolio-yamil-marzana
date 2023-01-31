@@ -1,0 +1,21 @@
+<nav class="sticky-top wrapper animate__animated animate__fadeInDown navbar navbar-expand-lg navbar-light bg-light">
+    <div class="section-1">
+        <div class="name">
+            <i class="uil uil-compass"></i>
+        </div>
+    </div>
+    
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse section-2 justify-content-end" id="navbarLinks">
+        <ul class="navbar-nav list-menu">
+            <li class="row nav-item item-menu d-flex align-items-center" *ngFor="let item of links">
+                <span class="item-number">
+                    <i [class]="item.icon"></i>
+                </span>
+                <a class="nav-link link" (click)="scrollLink(item.router)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

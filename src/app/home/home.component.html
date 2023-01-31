@@ -1,0 +1,22 @@
+<div class="col-xs-12 col-sm-12 col-lg-10 col-xl-6 wrapper" [id]="'Home'">
+
+
+    <img [src]="image" style="border-radius: 45%;opacity: 0.75;"(mouseover)="setNewImage()" (mouseleave)="setOldImage()" width="150">
+    <div class="pre-tittle animate__animated animate__fadeInUp animation-1">Hi </div>
+    <h1 #asTitle class="tittle animate__animated animate__fadeInUp animation-3"></h1>
+    <h2 class="sub-tittle animate__animated animate__fadeInUp animation-6">Fullstack web developer</h2>
+    <p class="description animate__animated animate__fadeInUp animation-6">Development of web sites and applications.</p>
+    <button type="button" class="btn btn-outline-secondary" (click)="descargarCV()">Download my CV</button>
+    <div class="link-wrapper animate__animated animate_fadeInUp animation-3">
+        <hr>
+        <div class="links">
+            <div class="block col-6" *ngFor="let linkObj of links">
+                <a (click)="openLink(linkObj.link)" target="_blank">
+                    <div class="block-in">
+                        <span [innerHTML]="linkObj.icon"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

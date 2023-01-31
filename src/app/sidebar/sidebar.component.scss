@@ -1,0 +1,57 @@
+.wrapper{
+    padding: 1rem;
+}
+
+.pre-title{
+    padding: 1rem 0
+}
+.title{
+    font-size: 3rem;
+}
+.sub-title{
+    padding: 0.5rem 0;
+}
+.description{
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.8rem;
+    letter-spacing: .2px;
+    color:#ede7e7;
+}
+
+.video-wrapper{
+    position: relative;
+
+    &:before{
+        top:0;
+        left:0;
+        position:absolute;
+        content:"";
+        background-color: #1e609182;
+        width: 100%;
+        height:100%;
+        pointer-events: none;
+    }
+}
+
+.links{
+    .block{
+        height: 5rem;
+        padding: .15rem;
+        display: block;
+        .block-in{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            font-size: 2rem;
+            background: #ffffff0d;
+        }
+    }
+}
+a, a:visited, a:hover, a:link{
+    color:white;
+    font-weight: 500;
+}

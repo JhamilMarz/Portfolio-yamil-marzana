@@ -1,0 +1,33 @@
+
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+:root{
+    --color-1: #fafbfcf6;
+    --color-2: #34a0a4;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: rgb(110, 114, 118);
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--color-1);
+}
+
+h1,h2{
+    margin:0;
+}
+
+@for $i from 1 through 100 {
+    .animation-#{$i}{
+        animation-delay:#{$i/10}s;
+    }
+}
+
+hr {
+    border-color: #ffffff14;
+    margin: 1rem 0;
+}
